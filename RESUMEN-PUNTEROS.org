@@ -40,6 +40,32 @@
      return 0;
    #+END_SRC
 
+   #+NAME: Ejemplo 2
+   #+BEGIN_SRC C
+     // Compiled with: gcc -std=c11 -Wall -pthread -lm
+
+     #include <stdio.h>
+     #include <stdlib.h>
+
+
+     int main(void){
+       int *p1 = malloc(sizeof(int));
+       int *p2 = malloc(sizeof(int));
+       ,*p1 = 5;
+       ,*p2 = 6;
+       printf("memorias: %p %p %d %p %d\n", &p1, p1, *p1, p2, *p2);
+
+       int *aux = p1;
+       p1 = p2;
+       p2 = aux;
+
+       printf("memorias: %p %d %p %d", p1, *p1, p2, *p2);
+
+       return 0;
+     }
+   #+END_SRC
+
+
 *** Referencias
     + [[https://aprenderaprogramar.com/foros/index.php?topic=288.0][Aprende a programar - Malloc]]
 * Referencias
