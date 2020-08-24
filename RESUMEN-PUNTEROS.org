@@ -68,6 +68,10 @@
 
 *** Referencias
     + [[https://aprenderaprogramar.com/foros/index.php?topic=288.0][Aprende a programar - Malloc]]
+* Imagenes
+
+file:images/malloc.jpg
+
 * Referencias
 + [[https://docs.google.com/document/d/1gevO2s8HmfGwmvLv3LyWmIS3j1XdgHEBzP66pihvKGY/edit#][Manejo de Punteros y Memoria Dinámica en C]]
 * Dudas para Bender
