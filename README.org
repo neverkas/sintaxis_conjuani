@@ -6,4 +6,5 @@
 + [[https://aggie.io/][Aggie]]
 
 * Imagenes
-[[images/punteros.png][punteros]]
+[[file:images/punteros.png]]
+[[file:images/punteros.png][Punteros]]
