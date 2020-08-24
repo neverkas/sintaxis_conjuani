@@ -76,10 +76,10 @@
        int **padre = malloc(sizeof(int*) * 4);
 
        for(int i = 0; i < 4; i++)
-         ,*(padre+i) = malloc(sizeof(int));
+         *(padre+i) = malloc(sizeof(int));
 
        for(int i = 0; i < 4; i++)
-         ,**(padre + i) = i * 20;
+         **(padre + i) = i * 20;
 
        for(int i = 0; i < 4; i++){
          printf("El valor de la direccion: ");
