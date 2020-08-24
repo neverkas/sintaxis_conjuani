@@ -1,0 +1,46 @@
+#+TITLE: Punteros en C
+
+* Conceptos
+** Memoria Estática vs Dinámica
+*** Memoria Estática
+    La memoria estática es la que se reserva al *declarar variables* de cualquier tipo de datos,
+    incluso así las estructuras (en struct) y también los *punteros* a tipos de datos.
+    Y se aloja en el *Stack del proceso*, no se puede modificar el espacio en memoria que ocupan ni tampoco liberarla.
+*** Memoria Dinámica
+    Se reserva en *tiempo de ejecución* y se reserva en el *heap* del proceso.
+    (los datos apuntados por los punteros). Y se debe reservar la memoria y liberarla.
+** Malloc
+
+   #+BEGIN_EXAMPLE
+   la n dentro de la función malloc sirve para hacer en ese ejemplo asignación de memoria 
+   de la cantidad de caracteres que se quiere; en efecto se pide el valor de n para que se sepa
+   cuántos caracteres tendrá la cadena, seguido esto se multiplica n*sizeof(char) para hacer
+   la reserva en cantidad de memoria de n caracteres:
+   por ejemplo si la cadena tendrá 10 caracteres y se quiere reservar memoria dinámicamente
+   entonces la función será:
+
+   char* p;
+   n=10;
+   p=(char*)malloc(n*sizeof(char)); /*Reserva memoria para 10 caracteres*/
+   #+END_EXAMPLE
+
+   #+NAME: EJemplo 1
+   #+BEGIN_SRC C
+     int *p = malloc(sizeof(int));
+     int a = 5;
+     p = &a;
+
+     //&p (La direccion de memoria de P)
+     //p (Guarda UNA direccion de memoria)
+     //*p (Muestra/Modifica el valor que contiene UNA direccion de memoria)
+     printf("El objeto de la direccion en memoria que se le asigno a (En este caso es &a) p = %d\n", *p);
+     printf("La direccion de memoria de a = %p\n", &a);
+     printf("El objeto (En este caso una memoria) de p (%%p lo muestra en hexadecimal) = %p\n", p);
+     printf("La direccion de memoria de p = %p\n", &p);
+     return 0;
+   #+END_SRC
+
+*** Referencias
+    + [[https://aprenderaprogramar.com/foros/index.php?topic=288.0][Aprende a programar - Malloc]]
+* Referencias
++ [[https://docs.google.com/document/d/1gevO2s8HmfGwmvLv3LyWmIS3j1XdgHEBzP66pihvKGY/edit#][Manejo de Punteros y Memoria Dinámica en C]]
