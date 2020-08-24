@@ -51,8 +51,8 @@
      int main(void){
        int *p1 = malloc(sizeof(int));
        int *p2 = malloc(sizeof(int));
-       ,*p1 = 5;
-       ,*p2 = 6;
+       *p1 = 5;
+       *p2 = 6;
        printf("memorias: %p %p %d %p %d\n", &p1, p1, *p1, p2, *p2);
 
        int *aux = p1;
@@ -70,3 +70,18 @@
     + [[https://aprenderaprogramar.com/foros/index.php?topic=288.0][Aprende a programar - Malloc]]
 * Referencias
 + [[https://docs.google.com/document/d/1gevO2s8HmfGwmvLv3LyWmIS3j1XdgHEBzP66pihvKGY/edit#][Manejo de Punteros y Memoria Dinámica en C]]
+* Dudas para Bender
+** Paréntesis en Punteros
+
+   #+NAME: Duda 1
+   #+BEGIN_SRC C
+     (*unaVariable) = (*unaVariable) + 1;
+
+     *unaVariable = *unaVariable + 1;
+   #+END_SRC
+
+   #+NAME: Comentario de la duda 1
+   #+BEGIN_COMMENT
+   Arrojan el mismo resultado, pero porque en el ejemplo que vimos agregan el paréntesis,
+   en especial el paréntesis de la izquierda (valorL)
+   #+END_COMMENT
