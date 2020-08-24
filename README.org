@@ -1,7 +1,13 @@
 #+TITLE: Codeando con Juani v2
 
 * Paginas para Codear
-+ [[https://codecollab.io/][CodeCollab]]
+1. [[https://codecollab.io/][CodeCollab]]
+  
+2. [[https://repl.it/][Repl]] (
+   - Tiene como ventaja que podes edición modo emacs/vim
+   - Tiene como desventaja que al compartir en tiempo real y tratar de editar, te redirecciona a otro
+3. [[https://codeanywhere.com/editor/][CodeAnyWhere]]
+   - Ventajas: Es como un entorno de desarrollo
 * Paginas para Dibujar
 + [[https://aggie.io/][Aggie]]
 * Imagenes

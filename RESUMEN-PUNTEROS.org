@@ -65,6 +65,30 @@
      }
    #+END_SRC
 
+   #+NAME: Ejemplo 3
+   #+BEGIN_SRC C
+     #include <string.h>
+     #include <stdio.h>
+     #include <stdlib.h>
+
+     int main(void){
+       // reservamos memoria para
+       int **padre = malloc(sizeof(int*) * 4);
+
+       for(int i = 0; i < 4; i++)
+         ,*(padre+i) = malloc(sizeof(int));
+
+       for(int i = 0; i < 4; i++)
+         ,**(padre + i) = i * 20;
+
+       for(int i = 0; i < 4; i++){
+         printf("El valor de la direccion: ");
+         printf("%p es %d\n", *(padre+i), **(padre + i));
+       }
+
+       return 0;
+     }
+   #+END_SRC
 
 *** Referencias
     + [[https://aprenderaprogramar.com/foros/index.php?topic=288.0][Aprende a programar - Malloc]]
@@ -74,6 +98,7 @@ file:images/malloc.jpg
 
 * Referencias
 + [[https://docs.google.com/document/d/1gevO2s8HmfGwmvLv3LyWmIS3j1XdgHEBzP66pihvKGY/edit#][Manejo de Punteros y Memoria Dinámica en C]]
++ [[http://www.cplusplus.com/reference/cstring/memcpy/][Función memcpy - cplusplus.com]]
 * Dudas para Bender
 ** Paréntesis en Punteros
 
