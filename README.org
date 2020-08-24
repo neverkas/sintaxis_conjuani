@@ -4,7 +4,10 @@
 + [[https://codecollab.io/][CodeCollab]]
 * Paginas para Dibujar
 + [[https://aggie.io/][Aggie]]
-
 * Imagenes
 [[file:images/punteros.png]]
-[[file:images/punteros.png][Punteros]]
+* Playlist Youtube
+  - [[https://www.youtube.com/watch?v=RCVNMRcefUk&list=PLw8RQJQ8K1ySN6bVHYEpDoh-CKVkL_uOF][Empieza a programar]]
+  - [[https://www.youtube.com/playlist?list=PLTd5ehIj0goOAWdpCpghXiRCmEOrJJLEW][Tutorial de C]]
+  - [[https://www.youtube.com/playlist?list=PLTd5ehIj0goMZ33qJ7JmuXjSO8RoefiZS][Desarrollando en C]]
+  - [[https://www.youtube.com/watch?v=7YBzHJJYpZo&list=PLmxqg54iaXrhTqZxylLPo0nov0OoyJqiS][Programacion en C y C++]]
