@@ -81,7 +81,7 @@
    #+END_SRC
 
    #+NAME: Comentario de la duda 1
-   #+BEGIN_COMMENT
+   #+BEGIN_EXAMPLE
    Arrojan el mismo resultado, pero porque en el ejemplo que vimos agregan el paréntesis,
    en especial el paréntesis de la izquierda (valorL)
-   #+END_COMMENT
+   #+END_EXAMPLE
