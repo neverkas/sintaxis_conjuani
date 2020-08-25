@@ -1,98 +1,11 @@
 #include <stdio.h>
 
-//#define centinela '\0'
+#define CENTINELA '\0'
 
-unsigned longitudCadena (const char* cadena)
-{
-  int i;
-  for(i = 0; *(cadena + i) != '\0'; i++)
-    ;
-  return i;
-    /*
-    EJERCICIO 1: Completá la definición de esta función para que devuelva la cantidad de caracteres de cadena 
-    (parámetro de entrada de la función), así
-    longitudCadena ("Hola") deberá devolver 4
-    longitudCadena ("") deberá devolver 0
-    longitudCadena ("Titulo\t1") deberá devolver 8
-
-    REQUISITOS: 
-        * Se debe usar la palabra reservada: for
-        * La función deberá comportarse en forma análoga a unsigned strlen (const char*) declarada en string.h
-    */
-}
-
-int esCadenaVacia (const char* cadena)
-{
-  //return 0 == longitudCadena(cadena); Manera mas corta
-  int cantidad_de_caracteres = longitudCadena(cadena);
-
-  if(cantidad_de_caracteres == 0) return 1;
-  return 0;
-    /*
-    EJERCICIO 2: Completá la definición de esta función para que devuelva si la cadena recibida es vacía
-    (parámetro de entrada de la función) y 0 en caso contrario, así
-    longitudCadena ("Hola") deberá devolver 0
-    longitudCadena ("") deberá devolver 1
-    longitudCadena ("Titulo\t1") deberá devolver 0
-
-    REQUISITOS: 
-        * Se debe usar la palabra reservada: if
-    */
-}
-
-char* copiarCadena (char* cadena1, const char* cadena2)
-{
-
-    char centinela = '\0';
-
-    for(int i = 0; (*(cadena1+i) = *(cadena2+i))  != centinela ; i++)
-      ;// sentencia nula
-      
-    /*
-    EJERCICIO 3: Completá la definición de esta función para que 
-    * copie en cadena1 la cadena presente en cadena2 (ambas recibidas como parámetros)
-    * devuelva lo que quedó en cadena1
-    así
-    copiarCadena ("1", Hola") deberá devolver "Hola"
-    copiarCadena ("UNO", "") deberá devolver ""
-    copiarCadena ("", Titulo\t1") deberá devolver "Titulo\t1"
-
-    REQUISITOS: 
-        * Se debe usar la palabra reservada: for
-        * Se debe usar el caracter nulo
-        * La función deberá comportarse en forma análoga a char* strcpy (char* s, const char* t) declarada en string.h
-    */
-    return (cadena1);
-}
-
-// 
-char* concatenarCadena (char* cadena1, const char* cadena2)
-{
-  
-  char centinela = '\0';
-  
-  int i;
-  for(int i = 0; *(cadena1+i) != centinela;i++)
-     printf("test %d \n", (cadena1 + i)); // sentencia nula
-    
-  for(int k = 0;(*(cadena1 + i + k) = *(cadena2+k)) != centinela; k++)
-     printf("test %d \n", (cadena1 + i + k));
-    /*
-    EJERCICIO 4: Completá la definición de esta función para que 
-    * concatene (agregue al final) en cadena1 la cadena presente en cadena2 (ambas recibidas como parámetros)
-    * devuelva lo que quedó en cadena1
-    así
-    concatenarCadena ("1", Hola") deberá devolver "1Hola"
-    concatenarCadena ("UNO", "") deberá devolver "UNO"
-    concatenarCadena ("", "Titulo\t1") deberá devolver "Titulo\t1"
-
-    REQUISITOS: 
-        * Se debe usar la palabra reservada: for
-        * Se debe usar el caracter nulo
-        * La función deberá comportarse en forma análoga a char* strcat (char* s, const char* t) declarada en string.h
-    */
-    return (cadena1);
-}
+unsigned longitudCadena (const char* cadena);
+int esCadenaVacia (const char* cadena);
+char* copiarCadena (char* cadena1, const char* cadena2);
+char* concatenarCadena (char* cadena1, const char* cadena2);
 
 int main()
 {
@@ -128,10 +41,101 @@ int main()
     concatenarCadena (strCopia, str0);
     printf("La concatenacion segun concatenarCadena de \"%s\" a \"%s\" es \"%s\".\n", str0, str2, strCopia);
     printf("-------------------------------------------------------------------------\n\n\n");
-
+    
     return (0);
 }
 
 
+unsigned longitudCadena (const char* cadena)
+{
+  int cantidadCaracteres;
+
+
+  for(cantidadCaracteres=0; *(cadena + cantidadCaracteres) != CENTINELA; cantidadCaracteres++)
+    ; // sentencia nula
+
+    
+  return cantidadCaracteres;
+    /*
+    EJERCICIO 1: Completá la definición de esta función para que devuelva la cantidad de caracteres de cadena 
+    (parámetro de entrada de la función), así
+    longitudCadena ("Hola") deberá devolver 4
+    longitudCadena ("") deberá devolver 0
+    longitudCadena ("Titulo\t1") deberá devolver 8
+
+    REQUISITOS: 
+        * Se debe usar la palabra reservada: for
+        * La función deberá comportarse en forma análoga a unsigned strlen (const char*) declarada en string.h
+    */
+}
+
+int esCadenaVacia (const char* cadena)
+{
+  int cantidadCaracteres;
+  cantidadCaracteres=longitudCadena(cadena);
+  
+  
+  // si se cumple que la cadena no tiene caracteres
+  if(cantidadCaracteres!= 0) return 0;
+  // caso contrario
+  return 1;
+    /*
+    EJERCICIO 2: Completá la definición de esta función para que devuelva si la cadena recibida es vacía
+    (parámetro de entrada de la función) y 0 en caso contrario, así
+    longitudCadena ("Hola") deberá devolver 0
+    longitudCadena ("") deberá devolver 1
+    longitudCadena ("Titulo\t1") deberá devolver 0
+
+    REQUISITOS: 
+        * Se debe usar la palabra reservada: if
+    */
+}
+
+char* copiarCadena (char* cadena1, const char* cadena2)
+{
+    for(int incrementador=0;(*(cadena1+incrementador)=*(cadena2+incrementador))!= CENTINELA;incrementador++)
+      ;// sentencia nula
+      
+    /*
+    EJERCICIO 3: Completá la definición de esta función para que 
+    * copie en cadena1 la cadena presente en cadena2 (ambas recibidas como parámetros)
+    * devuelva lo que quedó en cadena1
+    así
+    copiarCadena ("1", Hola") deberá devolver "Hola"
+    copiarCadena ("UNO", "") deberá devolver ""
+    copiarCadena ("", Titulo\t1") deberá devolver "Titulo\t1"
+
+    REQUISITOS: 
+        * Se debe usar la palabra reservada: for
+        * Se debe usar el caracter nulo
+        * La función deberá comportarse en forma análoga a char* strcpy (char* s, const char* t) declarada en string.h
+    */
+    return (cadena1);
+}
+
+// 
+char* concatenarCadena (char* cadena1, const char* cadena2)
+{
+  int incrementador;
+  for(incrementador=0;*(cadena1+incrementador)!= CENTINELA;incrementador++)
+    ; // sentencia nula
+  for(int incrementador2=0;((*(cadena1+incrementador+incrementador2)=*(cadena2+incrementador2))!=CENTINELA);incrementador2++)
+    ; // sentencia nula
+    /*
+    EJERCICIO 4: Completá la definición de esta función para que 
+    * concatene (agregue al final) en cadena1 la cadena presente en cadena2 (ambas recibidas como parámetros)
+    * devuelva lo que quedó en cadena1
+    así
+    concatenarCadena ("1", Hola") deberá devolver "1Hola"
+    concatenarCadena ("UNO", "") deberá devolver "UNO"
+    concatenarCadena ("", "Titulo\t1") deberá devolver "Titulo\t1"
+
+    REQUISITOS: 
+        * Se debe usar la palabra reservada: for
+        * Se debe usar el caracter nulo
+        * La función deberá comportarse en forma análoga a char* strcat (char* s, const char* t) declarada en string.h
+    */
+    return (cadena1);
+}
 
 

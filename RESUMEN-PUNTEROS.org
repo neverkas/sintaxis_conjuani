@@ -92,6 +92,25 @@
 
 *** Referencias
     + [[https://aprenderaprogramar.com/foros/index.php?topic=288.0][Aprende a programar - Malloc]]
+** GetLine Vs. fgets
+  
+   #+NAME: Ejemplo de fgets
+   #+BEGIN_SRC C
+     char strArray[LONGITUD];
+     // reservamos memoria para un arreglo
+     // de caracteres con capacidad de 
+     // 
+     char *strPtr = malloc(sizeof(char));
+  
+     printf("Inserte texto: ");
+     fgets(strArray, LONGITUD, stdin);  
+     printf("\n\n\ntexto escrito: %s\n", strArray);
+
+     printf("\n\n\nInserte texto: ");
+     fgets(strPtr, LONGITUD, stdin);
+     printf("\n\n\ntexto escrito: %s", strPtr);
+   #+END_SRC
+
 * Imagenes
 
 file:images/malloc.jpg
