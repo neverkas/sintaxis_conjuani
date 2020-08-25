@@ -24,7 +24,7 @@
    p=(char*)malloc(n*sizeof(char)); /*Reserva memoria para 10 caracteres*/
    #+END_EXAMPLE
 
-   #+NAME: EJemplo 1
+   #+NAME: Ejemplo 1
    #+BEGIN_SRC C
      int *p = malloc(sizeof(int));
      int a = 5;
@@ -92,6 +92,7 @@
 
 *** Referencias
     + [[https://aprenderaprogramar.com/foros/index.php?topic=288.0][Aprende a programar - Malloc]]
+    + [[https://www.learn-c.org/en/Arrays_and_Pointers][Arrays and Pointers - learn-c.org]]
 ** GetLine Vs. fgets
   
    #+NAME: Ejemplo de fgets
@@ -110,7 +111,37 @@
      fgets(strPtr, LONGITUD, stdin);
      printf("\n\n\ntexto escrito: %s", strPtr);
    #+END_SRC
+** Fuga de Memoria (Memory leaks)
+*** Explicaciones by friends
 
+    #+BEGIN_EXAMPLE
+    Tipo
+    Tenés el espacio que es tuyo
+    El que es de otro
+    Y el que no es de nadie
+    Este es el que reservaste y que estás seguro que podés usar
+    Este es el que te tira segmentation fault cuando tratás de usarlo
+    Este también podés usarlo, pero nadie te garantiza que va a estar ahí
+    Vos estás usando ese
+ 
+    En condiciones normales no hay forma
+    Sólo asegurarte de pedir toda la memoria que vayas a usar
+    Cero que si usás valgrind te tira que estás haciendo una escritura inválida
+    #+END_EXAMPLE
+
+*** Referencias
+    + [[http://www.it.uc3m.es/pbasanta/asng/course_notes/memory_profiler_es.html][Perfilador de memoria Valgrind - Arquitectura de Sistemas uc3m]]
+** Parametros a un programa en C
+   + Los parámetros se pasan al momento de ejecutar el programa
+   + El programa se ejecuta a partir de una linea de comando en una terminal
+
+   #+NAME: Ejemplo - Pasar parametros a un programa en C
+   #+BEGIN_SRC C
+   #+END_SRC
+
+*** Referencias
+    + [[https://flaviocopes.com/c-parameters-command-line/][Parametros a un programa en C - flaviocopes.com]]
+    + [[https://www.studytonight.com/c/command-line-argument.php][Command Line Argument in C - studytonight.com]]
 * Imagenes
 
 file:images/malloc.jpg
