@@ -147,7 +147,7 @@
     + [[https://lambda.inf.ucv.cl/funprog/apuntes/U5_3_Vectores_Dinamicos.html][Vectores Dinámicos - Universidad Católica de Valparaíso]]
     + [[https://jcsis.wordpress.com/2017/04/09/vector-dinamico-con-malloc-en-c/][Vector dinámico con malloc en C - Blog jcsis]]
 * Imagenes
-
+[[images/malloc.jpg]]
 file:images/malloc.jpg
 
 * Referencias
