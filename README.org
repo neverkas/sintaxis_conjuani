@@ -1,22 +1,20 @@
 #+TITLE: Codeando con Juani v2
 
-* Manuales de Referencia
-  + 
+* Sitios de Referencia
+  + [[https://www.learn-c.org/en/Arrays_and_Pointers][Arrays and Pointers - learn-c.org]]
   + [[http://www.cplusplus.com/reference/cstdlib/][Cplusplus]]
-* Paginas para Codear
+* IDE Colaborativos Online
 1. [[https://codecollab.io/][CodeCollab]]
-  
-2. [[https://repl.it/][Repl]] (
-   - Tiene como ventaja que podes edición modo emacs/vim
-   - Tiene como desventaja que al compartir en tiempo real y tratar de editar, te redirecciona a otro
+2. [[https://repl.it/][Repl]]
+   - Edición modo emacs/vim
 3. [[https://codeanywhere.com/editor/][CodeAnyWhere]]
    - Ventajas: Es como un entorno de desarrollo
-* Paginas para Dibujar
+* Herramientas Diagramas Online
 + [[https://aggie.io/][Aggie]]
-* Imagenes
-[[file:images/punteros.png]]
 * Playlist Youtube
   - [[https://www.youtube.com/watch?v=RCVNMRcefUk&list=PLw8RQJQ8K1ySN6bVHYEpDoh-CKVkL_uOF][Empieza a programar]]
   - [[https://www.youtube.com/playlist?list=PLTd5ehIj0goOAWdpCpghXiRCmEOrJJLEW][Tutorial de C]]
   - [[https://www.youtube.com/playlist?list=PLTd5ehIj0goMZ33qJ7JmuXjSO8RoefiZS][Desarrollando en C]]
   - [[https://www.youtube.com/watch?v=7YBzHJJYpZo&list=PLmxqg54iaXrhTqZxylLPo0nov0OoyJqiS][Programacion en C y C++]]
+* Imagenes
+[[file:images/punteros.png]]
