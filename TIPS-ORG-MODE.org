@@ -1,0 +1,4 @@
+* Agregar imágenes
+** Referencias
+   + [[http://pragmaticemacs.com/emacs/org-mode-basics-iii-add-links-and-images-to-you-notes/][Add links and images to your notes - pragmaticemacs.com]]
+   + [[https://orgmode.org/manual/Images.html][Images - orgmode.org]]
