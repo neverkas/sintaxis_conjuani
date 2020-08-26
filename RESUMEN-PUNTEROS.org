@@ -147,10 +147,14 @@
     + [[https://lambda.inf.ucv.cl/funprog/apuntes/U5_3_Vectores_Dinamicos.html][Vectores Dinámicos - Universidad Católica de Valparaíso]]
     + [[https://jcsis.wordpress.com/2017/04/09/vector-dinamico-con-malloc-en-c/][Vector dinámico con malloc en C - Blog jcsis]]
 * Imagenes
-#+CAPTION: Diagrama de Memoria
-#+NAME:   fig:SED-HR4049
-[[images/malloc.jpg]]
+  
+  #+CAPTION: Diagrama de Memoria
+  #+NAME:   fig:PUNTEROS-1
+  [[images/punteros.png]]
 
+  #+CAPTION: Diagrama de Memoria
+  #+NAME:   fig:PUNTEROS-2
+  [[images/malloc.jpg]]
 
 * Referencias
 + [[https://docs.google.com/document/d/1gevO2s8HmfGwmvLv3LyWmIS3j1XdgHEBzP66pihvKGY/edit#][Manejo de Punteros y Memoria Dinámica en C]]
