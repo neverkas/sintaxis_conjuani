@@ -1,0 +1,3 @@
+* Casteo
+** Referencias
+   + [[https://www.guru99.com/c-type-casting.html][TypeCasting in C: Implicit, Explicit - guru99.com]]

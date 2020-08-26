@@ -1,5 +1,8 @@
 #+TITLE: Codeando con Juani v2
 
+* Manuales de Referencia
+  + 
+  + [[http://www.cplusplus.com/reference/cstdlib/][Cplusplus]]
 * Paginas para Codear
 1. [[https://codecollab.io/][CodeCollab]]
   
