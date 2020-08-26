@@ -142,6 +142,10 @@
 *** Referencias
     + [[https://flaviocopes.com/c-parameters-command-line/][Parametros a un programa en C - flaviocopes.com]]
     + [[https://www.studytonight.com/c/command-line-argument.php][Command Line Argument in C - studytonight.com]]
+** Vectores Dinámicos
+*** Referencias
+    + [[https://lambda.inf.ucv.cl/funprog/apuntes/U5_3_Vectores_Dinamicos.html][Vectores Dinámicos - Universidad Católica de Valparaíso]]
+    + [[https://jcsis.wordpress.com/2017/04/09/vector-dinamico-con-malloc-en-c/][Vector dinámico con malloc en C - Blog jcsis]]
 * Imagenes
 
 file:images/malloc.jpg
